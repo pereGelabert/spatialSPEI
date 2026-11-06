@@ -1,6 +1,6 @@
 # SpatialSPEI: Spatial Calculation of SPEI and Evapotranspiration in R
 
-This repository provides optimized R functions for the spatial calculation of Potential Evapotranspiration (PET / ETo) and the Standardised Precipitation Evapotranspiration Index (SPEI) from raster-based time series.
+This repository provides optimized R functions for the spatial calculation of the Standardised Precipitation Evapotranspiration Index (SPEI) from raster-based time series.
 
 It is specifically designed for spatial ecology, forest modeling, and large-scale environmental data science. The workflow leverages C++ parallel processing via the `terra` package and the spatiotemporal data cube architecture of the `stars` package to ensure safe execution.
 
