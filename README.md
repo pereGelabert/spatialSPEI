@@ -1,4 +1,4 @@
-# SpatialSPEI: Efficient Spatial Calculation of SPEI and Evapotranspiration in R
+# SpatialSPEI: Spatial Calculation of SPEI and Evapotranspiration in R
 
 This repository provides optimized R functions for the spatial calculation of Potential Evapotranspiration (PET / ETo) and the Standardised Precipitation Evapotranspiration Index (SPEI) from raster-based time series.
 
