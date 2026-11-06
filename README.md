@@ -2,7 +2,7 @@
 
 This repository provides optimized R functions for the spatial calculation of the Standardised Precipitation Evapotranspiration Index (SPEI) from raster-based time series.
 
-It is specifically designed for spatial ecology, forest modeling, and large-scale environmental data science. The workflow leverages C++ parallel processing via the `terra` package and the spatiotemporal data cube architecture of the `stars` package to ensure safe execution.
+It is specifically designed for spatial ecology and forest modeling. The workflow leverages C++ parallel processing via the `terra` package and the spatiotemporal data cube architecture of the `stars` package to ensure safe execution.
 
 ## Dependencies
 
@@ -45,7 +45,7 @@ A `SpatRaster` object containing the monthly PET/ETo values (mm).
 
 ### 2. `calc_spatial_spei()`
 
-Calculates the SPEI based on the climatic water balance (Precipitation - Demand). It utilizes a data cube architecture (`stars`) to guarantee the integrity of spatiotemporal dimensions and prevent matrix coercion errors.
+Calculates the SPEI based on the climatic water balance (Precipitation - PET/ETo). It utilizes a data cube architecture (`stars`) to guarantee the integrity of spatiotemporal dimensions and prevent matrix coercion errors.
 
 **Arguments:**
 *   `prec`: `SpatRaster`. Monthly precipitation (mm).
