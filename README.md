@@ -86,7 +86,7 @@ monthly_eto <- calc_spatial_pet(
   tmax = r_tmax, 
   prec = r_prec, 
   method = "hargreaves", 
-  start_year = 2015, 
+  start_year = 2020, 
   start_month = 10, 
   cores = 4
 )
@@ -96,13 +96,13 @@ spei_6 <- calc_spatial_spei(
   prec = r_prec, 
   pet = monthly_eto, 
   scale = 6, 
-  start_year = 2015, 
+  start_year = 2020, 
   start_month = 10,
   distribution = "log-Logistic"
 )
 
 # 4. Export the result for downstream spatial modeling (e.g., Random Forest via ranger)
-writeRaster(spei_6, "SPEI_6_2015_2020.tif", overwrite = TRUE)
+writeRaster(spei_6, "SPEI_6_2020_2025.tif", overwrite = TRUE)
 ```
 
 ## Methodological Considerations
