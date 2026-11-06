@@ -1,4 +1,4 @@
-#' Càlcul espacial de l'Evapotranspiració Potencial (PET)
+#' Càlcul espacial de l'Evapotranspiració Potencial (PET) or Reference Evapotranspiration (ETo)
 #'
 #' @param tmed SpatRaster de temperatura mitjana mensual (Celsius). Necessari per 'thornthwaite'.
 #' @param tmin SpatRaster de temperatura mínima mensual (Celsius). Necessari per 'hargreaves'.
@@ -10,7 +10,7 @@
 #' @export
 #' @import terra
 #' @import SPEI
-calc_spatial_pet <- function(tmed = NULL, tmin = NULL, tmax = NULL, 
+calc_spatial_pet_eto <- function(tmed = NULL, tmin = NULL, tmax = NULL, 
                              method = c("thornthwaite", "hargreaves"), 
                              start_year, cores = 1) {
   
