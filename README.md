@@ -24,7 +24,7 @@ source("https://raw.githubusercontent.com/pereGelabert/spatialSPEI/main/spei_fun
 
 ## Function Documentation
 
-### 1. `calc_spatial_pet()`
+### 1. `calc_spatial_pet_eto()`
 
 Calculates Potential Evapotranspiration (Thornthwaite) or Reference Evapotranspiration (Classic Hargreaves / Modified Hargreaves) by applying the equations cell-by-cell in parallel.
 
