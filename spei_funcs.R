@@ -78,7 +78,7 @@ calc_spatial_pet <- function(tmed = NULL, tmin = NULL, tmax = NULL,
 #' Càlcul espacial de l'SPEI basat en cubs de dades (stars)
 #'
 #' @param prec SpatRaster de precipitació mensual.
-#' @param pet SpatRaster d'Evapotranspiració Potencial mensual.
+#' @param pet_eto SpatRaster d'Evapotranspiració Potencial mensual.
 #' @param scale Numèric. Escala temporal de l'SPEI.
 #' @param start_year Numèric. Any d'inici de la sèrie temporal.
 #' @param start_month Numèric. Mes d'inici de la sèrie temporal. Per defecte 1.
@@ -87,13 +87,13 @@ calc_spatial_pet <- function(tmed = NULL, tmin = NULL, tmax = NULL,
 #' @param fit Caràcter. Mètode d'ajust.
 #' @return Un SpatRaster amb els valors de l'SPEI.
 #' @export
-calc_spatial_spei <- function(prec, pet, scale = 3, 
+calc_spatial_spei <- function(prec, pet_eto, scale = 3, 
                               start_year, start_month = 1,
                               kernel = list(type = 'rectangular', shift = 0), 
                               distribution = 'log-Logistic', 
                               fit = 'ub-pwm') {
   
-  d_balance <- prec - pet
+  d_balance <- prec - pet_eto
   d_stars <- stars::st_as_stars(d_balance)
   
   spei_wrapper <- function(x) {
