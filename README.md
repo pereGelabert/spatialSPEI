@@ -17,7 +17,7 @@ install.packages(c("terra", "stars", "SPEI"))
 There is no need to install a formal package. You can load the functions directly into your R session by running:
 
 ```R
-source("https://raw.githubusercontent.com/pereGelabert/spatialSPEI/main/spei_functions.R")
+source("https://raw.githubusercontent.com/pereGelabert/spatialSPEI/main/spei_funcs.R")
 ```
 
 ---
@@ -72,7 +72,7 @@ library(stars)
 library(SPEI)
 
 # Load the functions
-source("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/spei_functions.R")
+source("https://raw.githubusercontent.com/pereGelabert/spatialSPEI/main/spei_funcs.R")
 
 # 1. Load Data (Pre-aggregated monthly SpatRasters)
 # r_prec <- rast("monthly_precipitation.tif")
