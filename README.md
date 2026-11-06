@@ -49,7 +49,7 @@ Calculates the SPEI based on the climatic water balance (Precipitation - Demand)
 
 **Arguments:**
 *   `prec`: `SpatRaster`. Monthly precipitation (mm).
-*   `pet`: `SpatRaster`. Monthly evapotranspiration (mm), obtained via `calc_spatial_pet()`.
+*   `pet_eto`: `SpatRaster`. Monthly Potential Evapotranspiration (PET) or Reference Evapotranspiration (ETo), obtained via `calc_spatial_pet_eto()`.
 *   `scale`: Numeric. The time scale of the SPEI accumulation (e.g., 3, 6, 12, 24 months).
 *   `start_year`: Numeric. Starting year of the time series (ensures correct monthly grouping for probabilistic fitting).
 *   `start_month`: Numeric. Starting month of the time series (1-12). Defaults to `1`.
